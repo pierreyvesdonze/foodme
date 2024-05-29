@@ -1,0 +1,44 @@
+@import "./responsive";
+@import "./settings";
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--body-bg);
+    background-image: url('../images/foodme-bg.png');
+    background-attachment: fixed
+}
+
+.navbar {
+    background-color: var(--navbar-color) !important;
+    height: 100vh;
+}
+
+* {
+    color: var(--text-color) !important;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+// BTN
+.custom-btn {
+    background-color: var(--btn-color) !important;
+    color: var(--btn-text-color) !important;
+    &:hover {
+        background-color: var(--btn-hover-color) !important;
+    }
+}

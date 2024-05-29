@@ -1,0 +1,13 @@
+:root {
+    --body-bg: background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);;
+    --btn-color: #afc7d1;
+    --btn-hover-color: #93c4da;
+    --btn-text-color: white;
+    --text-color: #858585;
+    --font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    --navbar-color: #0f131a;
+}
+
+:root[theme='dark'] {
+    --body-bg: rgb(20 21 22);
+}
