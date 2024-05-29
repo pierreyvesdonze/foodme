@@ -66,7 +66,7 @@ export default function Register() {
 						placeholder="Choisi un pseudo"
 						{...register('pseudo', { required: true })}
 					/>
-					{errors.email && <span className="error">Pseudo requis</span>}
+					{errors.pseudo && <span className="error">Pseudo requis</span>}
 				</FormControl>
 				<br />
 				<br />
