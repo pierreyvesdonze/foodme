@@ -1,0 +1,13 @@
+# Activer le module de réécriture des URL
+RewriteEngine On
+
+# Règles pour l'API Symfony (backend)
+RewriteCond %{REQUEST_URI} ^/api
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ backend/public/index.php [QSA,L]
+
+# Rediriger toutes les autres requêtes vers le dossier React
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ frontend/public/$1 [L]
